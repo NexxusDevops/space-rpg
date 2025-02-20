@@ -11,10 +11,10 @@ class TitleScene extends Phaser.Scene {
         this.add.image(400, 300, "background").setOrigin(0.5);
         this.add.text(200, 95, "Dragon Space Battle", { fontSize: '32px', fill: '#fff' });
         this.add.text(200, 130, "By Nexxus", { fontSize: '32px', fill: '#fff' });
-        this.add.text(200, 220, "Rules:", { fontSize: '24px', fill: '#fff' });
-        this.add.text(200, 250, "- Move with arrow keys", { fontSize: '18px', fill: '#fff' });
-        this.add.text(200, 280, "- Shoot fireballs with SPACE", { fontSize: '18px', fill: '#fff' });
-        this.add.text(200, 310, "- Avoid the dragon's fireballs!", { fontSize: '18px', fill: '#fff' });
+        this.add.text(200, 240, "Rules:", { fontSize: '24px', fill: '#fff' });
+        this.add.text(200, 270, "- Move with arrow keys", { fontSize: '18px', fill: '#fff' });
+        this.add.text(200, 300, "- Shoot fireballs with SPACE", { fontSize: '18px', fill: '#fff' });
+        this.add.text(200, 330, "- Avoid the dragon's fireballs!", { fontSize: '18px', fill: '#fff' });
         this.add.text(250, 390, "Press SPACE to Begin", { fontSize: '24px', fill: '#ffff00' });
         
         this.input.keyboard.on('keydown-SPACE', () => {
@@ -43,7 +43,7 @@ class GameScene extends Phaser.Scene {
 
         this.killCountText = this.add.text(20, 20, `Dragons Defeated: ${this.dragonKillCount}`, { fontSize: '20px', fill: '#fff' });
 
-        this.player = this.physics.add.sprite(400, 500, "player");
+        this.player = this.physics.add.sprite(100, 500, "player");
         this.player.setOrigin(0.5).setScale(0.2).setCollideWorldBounds(true).setDepth(2);
 
         this.cursors = this.input.keyboard.createCursorKeys();
