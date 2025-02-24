@@ -63,6 +63,7 @@ python -m http.server 8080
 Node.js (Using Live Server Globally):
 
 npm install -g live-server
+
 live-server
 
 The game will be available at http://127.0.0.1:8080/.
