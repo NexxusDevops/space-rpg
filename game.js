@@ -68,7 +68,7 @@ class GameScene extends Phaser.Scene {
         let velocityY = Phaser.Math.Between(-50, 50) * speedMultiplier;
 
         this.spaceDragon = this.physics.add.sprite(Phaser.Math.Between(100, 700), Phaser.Math.Between(100, 400), "spaceDragon");
-        this.spaceDragon.setOrigin(0.5).setScale(0.1).setDepth(1);
+        this.spaceDragon.setOrigin(0.5).setScale(0.2).setDepth(1);
         this.spaceDragon.setVelocity(velocityX, velocityY);
         this.spaceDragon.setCollideWorldBounds(true);
         this.spaceDragon.setBounce(1, 1);
